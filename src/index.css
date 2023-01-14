@@ -115,7 +115,7 @@ body{
 
 @media (max-width: 500px) {
   .main__image{
-    width: 100%;
+    width: 90%;
     border-radius: 0;
   }
   .main{
