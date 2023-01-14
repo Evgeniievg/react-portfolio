@@ -1,13 +1,128 @@
-body {
+body{
+  background-color: #1A1B21;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 0;
 }
+
+.main__image{
+  width: 30%;
+  margin: auto;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.main__title{
+  margin: 0;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: calc(14px + 14 * (100vw / 1440));
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.main__subtitle{
+  margin: 0;
+  color: #F3BF99;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: calc(14px + 14 * (100vw / 1440));
+  margin: 2% 0;
+  line-height: 15px;
+}
+
+.main__button{
+  width: 115px;
+  border-radius: 9px;
+  padding: 9px 15px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.main__button:hover{
+  transform: scale(1.05);
+  opacity: .9;
+}
+
+.main__button_email{
+  margin: 15px 15px 0 0;
+  color: #374151;
+}
+
+.main__button_github{
+  background-color: #5093E2;
+  color: #fff;
+}
+
+.main__text{
+  width: 60%;
+  text-align: left;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.main__textTitle{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(12px + 22 * (100vw / 1440));
+  line-height: 150%;
+  color: #fff;
+}
+
+.main__info{
+  color: #DCDCDC;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(12px + 16 * (100vw / 1440));
+  line-height: 150%;
+}
+
+.footer{
+  width: 100%;
+  background-color: #161619;
+  height: 15vh;
+  display: flex;
+}
+
+.footer__item{
+  width: 50px;
+  height: 50px;
+  background-color: #918E9B;
+  margin: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 764px) {
+  .main__image{
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main__image{
+    width: 100%;
+    border-radius: 0;
+  }
+  .main{
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
+
